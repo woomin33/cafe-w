@@ -1,0 +1,17 @@
+{
+  "name": "cafew",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server . --port=3000 --host=localhost --no-browser",
+    "format": "prettier . --check"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "prettier": "^3.5.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

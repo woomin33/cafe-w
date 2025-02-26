@@ -1,0 +1,151 @@
+:root {
+  --grayscale-black: #282725;
+  --grayscale-white: #fffcf9;
+}
+
+body * {
+  box-sizing: border-box;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+
+.inner {
+  width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header {
+  --header-background-color: var(--grayscale-black);
+  background-color: var(--header-background-color);
+  border-bottom: 1px solid rgba(255, 252, 249, 0.15);
+
+  .inner {
+    padding: 21px 120px 21px 109px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: orange; */
+  }
+  .link-list {
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--grayscale-white);
+    box-sizing: border-box;
+    width: 159px;
+    height: 40px;
+  }
+
+  .cafe-w {
+    display: flex;
+    box-sizing: border-box;
+    width: 100px;
+    height: 40px;
+    padding-right: 0.364px;
+    justify-content: center;
+    align-items: center;
+    gap: 7.273px;
+    flex-shrink: 0;
+  }
+
+  .search {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    padding-left: 202px;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
+  }
+}
+
+.menu {
+  background-color: var(--grayscale-black);
+  color: white;
+  height: 195px;
+
+  .inner {
+    padding: 47px 120px;
+    display: flex;
+    gap: 64px;
+
+    .item {
+      width: 180px;
+      display: flex;
+      flex-direction: column;
+      gap: 6.5px;
+
+      h4 {
+        font-size: 20px;
+        line-height: normal;
+        font-weight: 500;
+      }
+
+      .category-content {
+        font-size: 15px;
+        font-weight: 200;
+
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+      }
+    }
+  }
+}
+
+.banner {
+  background-color: #f3d6b0;
+  height: 600px;
+  .inner {
+    position: relative;
+    .catch-phrase {
+      position: absolute;
+      top: 83px;
+      left: 119px;
+      width: 402px;
+      height: 397px;
+      /* background-color: aqua; */
+    }
+
+    .baverage {
+      position: relative;
+      .baverage-1 {
+        position: absolute;
+        top: 113px;
+        left: 431px;
+      }
+      .baverage-2 {
+        position: absolute;
+        top: 62px;
+        right: 388px;
+      }
+      .baverage-3 {
+        position: absolute;
+        top: 242px;
+        right: 165px;
+      }
+
+      .baverage-2-description {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 68px;
+        right: 300px;
+
+        width: 441px;
+        height: 60px;
+        /* padding: 0px 52px 0px 51px; */
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 12px;
+        flex-shrink: 0;
+      }
+    }
+  }
+}
